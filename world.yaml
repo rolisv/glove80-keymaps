@@ -1,12 +1,15 @@
 precedence: [LSFT, LALT, RALT, LCTL, RCTL, RSFT] # latter overrides former: RSFT overrides all
 
 transforms:
-  I: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave                                 }
-  E: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   RALT: ae                     }
-  A: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: ring    }
+  I: { base: ogonek,  LCTL: diaeresis, RCTL: circumflex, RSFT: grave                                 }
+  E: { base: ogonek,  LCTL: abovedot,  RCTL: circumflex, RSFT: grave,   RALT: ae                     }
+  A: { base: ogonek,  LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: ring    }
+  C: { base: caron }
   Y: { base: acute,   LCTL: diaeresis                                                                }
   O: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: slash   }
-  U: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave                                 }
+  S: { base: caron }
+  U: { base: ogonek,  LCTL: macron,    RCTL: circumflex, RSFT: grave                                 }
+  Z: { base: caron }
   consonants:
      { base: cedilla, LCTL: ntilde,    RCTL: eszett                                                  }
   quotes_left:
@@ -18,23 +21,29 @@ transforms:
 
 characters:
   I:
+    ogonek:     { lower: "į",  upper: "Į"  }
     acute:      { lower: "í",  upper: "Í"  }
     diaeresis:  { lower: "ï",  upper: "Ï"  }
     circumflex: { lower: "î",  upper: "Î"  }
     grave:      { lower: "ì",  upper: "Ì"  }
   E:
+    ogonek:     { lower: "ę",  upper: "Ę"  }
+    abovedot:   { lower: "ė",  upper: "Ė"  }
     acute:      { lower: "é",  upper: "É"  }
     diaeresis:  { lower: "ë",  upper: "Ë"  }
     circumflex: { lower: "ê",  upper: "Ê"  }
     grave:      { lower: "è",  upper: "È"  }
     ae:         { lower: "æ",  upper: "Æ"  }
   A:
+    ogonek:     { lower: "ą",  upper: "Ą"  }
     acute:      { lower: "á",  upper: "Á"  }
     diaeresis:  { lower: "ä",  upper: "Ä"  }
     circumflex: { lower: "â",  upper: "Â"  }
     grave:      { lower: "à",  upper: "À"  }
     tilde:      { lower: "ã",  upper: "Ã"  }
     ring:       { lower: "å",  upper: "Å"  }
+  C:
+    caron:      { lower: "č",  upper: "Č"  }
   Y:
     acute:      { lower: "ý",  upper: "Ý"  }
     diaeresis:  { lower: "ÿ",  upper: "Ÿ"  }
@@ -45,11 +54,17 @@ characters:
     grave:      { lower: "ò",  upper: "Ò"  }
     tilde:      { lower: "õ",  upper: "Õ"  }
     slash:      { lower: "ø",  upper: "Ø"  }
+  S:
+    caron:      { lower: "š",  upper: "Š"  }
   U:
+    ogonek:     { lower: "ų",  upper: "Ų"  }
+    macron:     { lower: "ū",  upper: "Ū"  }
     acute:      { lower: "ú",  upper: "Ú"  }
     diaeresis:  { lower: "ü",  upper: "Ü"  }
     circumflex: { lower: "û",  upper: "Û"  }
     grave:      { lower: "ù",  upper: "Ù"  }
+  Z:
+    caron:      { lower: "ž",  upper: "Ž"  }
   consonants:
     cedilla:    { lower: "ç",  upper: "Ç"  }
     eszett:     { lower: "ß",  upper: "ẞ"  }
@@ -87,7 +102,6 @@ codepoints:
   currency_crypto: "₿"
   currency_cent:   "¢"
   currency_sign:   "¤"
-  currency_crypto: "₿"
   micro_sign: "µ"
 
 localizing:
