@@ -1,9 +1,9 @@
 {
   "keyboard": "glove80",
   "uuid": "",
-  "date": 1718327003,
+  "date": 1718351120,
   "creator": "",
-  "parent_uuid": "b7088b13-4cd3-4f15-a63a-b460fe5777fe",
+  "parent_uuid": "73e3ff8f-5171-41f0-b66f-3afe011f5e3c",
   "firmware_api_version": "1",
   "locale": "en-US",
   "title": "Glorious Engrammer v36-ro",
@@ -1246,7 +1246,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "UP",
+            "value": "DOWN",
             "params": []
           }
         ]
@@ -1255,7 +1255,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DOWN",
+            "value": "UP",
             "params": []
           }
         ]
@@ -1358,7 +1358,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PG_UP",
+            "value": "PG_DN",
             "params": []
           }
         ]
@@ -1367,7 +1367,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PG_DN",
+            "value": "PG_UP",
             "params": []
           }
         ]
@@ -4074,7 +4074,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "UP",
+            "value": "DOWN",
             "params": []
           }
         ]
@@ -4083,7 +4083,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DOWN",
+            "value": "UP",
             "params": []
           }
         ]
@@ -4186,7 +4186,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PG_UP",
+            "value": "PG_DN",
             "params": []
           }
         ]
@@ -4195,7 +4195,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PG_DN",
+            "value": "PG_UP",
             "params": []
           }
         ]
@@ -12066,7 +12066,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "INS",
+            "value": "DEL",
             "params": []
           }
         ]
@@ -12171,15 +12171,6 @@
         ]
       },
       {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&kp _CUT",
-            "params": []
-          }
-        ]
-      },
-      {
         "value": "&kp",
         "params": [
           {
@@ -12192,7 +12183,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&kp _UNDO",
+            "value": "&kp _PASTE",
             "params": []
           }
         ]
@@ -12201,16 +12192,25 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&kp _REDO",
+            "value": "&kp _COPY",
             "params": []
           }
         ]
       },
       {
-        "value": "&sk",
+        "value": "Custom",
         "params": [
           {
-            "value": "LSHFT",
+            "value": "&kp _CUT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp _UNDO",
             "params": []
           }
         ]
@@ -12279,15 +12279,6 @@
         ]
       },
       {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&kp _COPY",
-            "params": []
-          }
-        ]
-      },
-      {
         "value": "&kp",
         "params": [
           {
@@ -12310,6 +12301,15 @@
         "params": [
           {
             "value": "UP",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RIGHT",
             "params": []
           }
         ]
@@ -12441,15 +12441,6 @@
         ]
       },
       {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&kp _PASTE",
-            "params": []
-          }
-        ]
-      },
-      {
         "value": "&kp",
         "params": [
           {
@@ -12481,6 +12472,15 @@
         "params": [
           {
             "value": "END",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp _C(A)",
             "params": []
           }
         ]
@@ -13826,16 +13826,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "C_BRI_MAX",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_BRI_UP",
+            "value": "C_BRI_MIN",
             "params": []
           }
         ]
@@ -13853,7 +13844,16 @@
         "value": "&kp",
         "params": [
           {
-            "value": "C_BRI_MIN",
+            "value": "C_BRI_UP",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "C_BRI_MAX",
             "params": []
           }
         ]
